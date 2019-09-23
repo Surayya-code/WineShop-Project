@@ -240,13 +240,15 @@ text-transform: uppercase;
     margin-right: auto;
     margin-left: auto;
 }
-
+.sosial-media{
+    margin-bottom: 50px;
+}
 .sosial-media a{
    position: relative;
-   text-align: center;
+   /* text-align: center; */
    display:inline-block;
-   width: 30px;
-   height: auto;
+   width: 40px;
+   height: 40px;
    border-radius: 50%;
    background: #8e44ad;
    color:#ffffff;
@@ -254,6 +256,13 @@ text-transform: uppercase;
    margin-bottom: 15px;
    transition: .3s all ease;
  }
+
+ .sosial-media a>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
  .sosial-media a:hover{
     color:#f1c40f;
