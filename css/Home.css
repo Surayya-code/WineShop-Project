@@ -6,3 +6,8 @@
     text-decoration: none;
  color: rgba(171, 106, 233, 0.993);
 }
+
+.col-lg-4 .img-fluid{
+    max-width: 100%;
+    height: auto;
+}
