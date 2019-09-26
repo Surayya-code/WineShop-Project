@@ -16,7 +16,7 @@ nav ul li{
 .menu-icon i{
     display: inline-block;
     color: #000;
-    background: #000;
+
 }}
 
 // Medium devices (tablets, 768px and up)
@@ -88,7 +88,7 @@ nav  li a{
 .menu-icon{
     width: 100%;
     height: 50px;
-    background: grey;
+    background:transparent;
     text-align: center;
     align-items: center;
     box-sizing: border-box;
@@ -274,6 +274,45 @@ text-transform: uppercase;
     color:#f1c40f;
    
  }
- 
- 
 
+ .section{
+     position: relative;
+ }
+ 
+ .intro-section{
+background-size: cover;
+position: relative;
+background-position: center;
+ }
+
+ .intro-section.container .row{
+height: 100vh;
+min-height: 700px;
+ }
+
+ .owl-style .owl-nav .owl-prev,
+ .owl-style .owl-nav .owl-next{
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+     width: 40px;
+     height: 40px;
+     background: #fff;
+ }
+ .owl-style .owl-nav .owl-prev{
+     left: 0;
+ }
+ .owl-style .owl-nav .owl-next{
+     right: 0;
+ }
+ .owl-style .owl-nav .owl-prev > span,
+ .owl-style .owl-nav .owl-next > span{
+
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+ }
