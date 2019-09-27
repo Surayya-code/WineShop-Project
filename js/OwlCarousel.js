@@ -28,6 +28,6 @@ navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">']
 
   });
 
-  $('#menu-nav').menuNav({
-    addClass(.)
-  })
+  // $('#menu-nav').menuNav({
+  //   addClass(.)
+  // })

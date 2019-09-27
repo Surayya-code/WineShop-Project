@@ -36,6 +36,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Acme', sans-serif;
+    font-size:18px;
 }
 
 .header-top{
@@ -129,7 +130,7 @@ height: 300px;
 }
 
 /*--------------- ADD CARD------- */
-/* .wine-actions{
+.wine-actions{
     padding-top: 20px;
     padding-bottom: 20px;
     position: absolute;
@@ -138,17 +139,26 @@ height: 300px;
     bottom: 20px;
     background: #fff;
     opacity: 0;
-    visibility: hidden;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
-    transition: .3s all ease;
+    transition: .3s all ease; 
 }
 
 .wine-actions:hover{
+    opacity: 1;
     visibility: visible;
-} */
+} 
 
+.products a{
+    color:gray !important;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
 
+.products a:hover{
+    color:#930077 !important;
+}
 
 
 
@@ -158,9 +168,9 @@ height: 300px;
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
-    /* margin: 10px 0px; */
     background-attachment: fixed;
     background-position: center ;
+    
 }
 
 .hero-2:before {
@@ -188,22 +198,72 @@ height: 300px;
 }
 
 .hero-2 .sub-title{
-font-size: 1.5rem;
-font-weight: 300;
+color: #ffffff;
+font-size: 40px;
+font-weight: 200;
 text-transform: uppercase;
 
 }
 
 
 .hero-2 h2{
-font-size: 2rem;
+font-size: 80px;
 font-weight: 900;
 text-transform: uppercase;
 }
 
+.site-section-form{
+    font-size: 20px;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
 
-
+.site-section-form .btn{
+    font-size: 18px;
+    background-color:#930077 !important;
+    color:#ffffff;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
 /* section-3 */
+.site-section-three{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.site-section-started{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.site-section-foryou .block-10 .play-button{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: block;
+    border-radius: 50%;
+    border:none;
+}
+
+.block-16 figure .play-button>span {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    font-size: 20px!important;
+    -webkit-transform: translate(-50%,-45%);
+    -ms-transform: translate(-50%,-45%);
+    transform: translate(-50%,-45%);
+}
+
+.icon-play:before {
+    content:"";
+}
 
 .testimony img{
     width: 80px!important;
@@ -230,10 +290,26 @@ text-transform: uppercase;
     text-align: center;
 }
 
+
+
+/* section 4 */
+.site-section-four .post .img-fluid,h2{
+    margin-bottom: 30px;
+}
+
+.site-section-four a{
+text-decoration: none;
+color:#930077 !important;
+text-align: center;
+}
+
+.site-section-four #news{
+color:#930077 !important;  
+}
 /* footer */
 .footer {
     position: relative;
-    font-size: .85rem;
+    font-size: 18px;
     text-align: center;
     padding: 7rem 0;
     border-top: 1px solid #fff;
@@ -259,22 +335,31 @@ text-transform: uppercase;
    background: #8e44ad;
    color:#ffffff;
    top:0;
+   margin:3px;
    margin-bottom: 15px;
    transition: .3s all ease;
  }
 
  .sosial-media a>i{
     position: absolute;
+    font-size: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
  .sosial-media a:hover{
-    color:#f1c40f;
+    color:#16a085;
+    top:-10px;
    
  }
+ .sosial-media a:hover{
+   background-color: #ecf0f1;
+  }
 
+
+
+ /* owl-carousel */
  .section{
      position: relative;
  }
