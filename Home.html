@@ -21,9 +21,40 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/d57faaec46.js" ></script>
-    <script src="js/custom.js"></script>
+  
 </head>
 <body>
+
+<!-- mobile-menu -->
+<div class="mobile-menu d-none d-lg-none d-md-block" id="show-menu">
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="mobile-menu-header">
+            <div class="site-menu-close mt-3" >
+                <span><i class="fas fa-times"id="close"></i></span>
+            </div>
+        </div>
+        <div class="site-menu-body" id="menu-body">
+            <ul class="site-nav-ul">
+                <li class="active">
+                    <a href="Home.html"class="text-center">Home</a>
+                </li>
+                <li>
+                    <a href="About.html"class="text-center">About</a>
+                 </li>
+                <li >
+                    <a href="Shop.html"class="text-center">Wines</a>
+                </li>
+                <li>
+                     <a href="Shop.html"class="text-center">Shop</a>
+                </li>
+                <li >
+                     <a href="Contact.html"class="text-center">Contact</a>
+                 </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 
     <!-- Header Top -->
 <div class="header-top">
@@ -33,7 +64,7 @@
                     <a href="#">
                         <img src="img/logo.png" class="img-logo" alt="error">
                     </a>
-                    <div class="menu-icon align-item-center d-lg-none d-inline-block  d-md-block">
+                    <div class="menu-icon align-item-center d-lg-none d-inline-block  d-md-block" id="menu-nav">
                         <i class="fas fa-bars"></i>
                 </div>
                 </div>
@@ -43,11 +74,11 @@
 
 <!-- Menu nav -->
 <div class="sticky-wrapper d-none d-lg-block d-md-none">
-<div class="site-navbar" > 
+<div class="site-navbar"> 
     <div class="container">
         <div class="d-flex align-items-center">
             <div class="mx-auto">
-                <nav class="site-navbar navigation position-relative">
+                <nav class="site-navbar navigation position-relative" id="nav-top-sabit">
                         <ul >
                                 <li>
                                         <a href="Home.html">Home</a>
@@ -336,5 +367,7 @@
 
 <script src="js/include.js"></script>
 <script src="js/OwlCarousel.js"></script>
+<script src="js/Resize.js"></script>
+<script src="js/MenuNav.js"></script>
 </body>
 </html>

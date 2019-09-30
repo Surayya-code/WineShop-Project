@@ -10,20 +10,24 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:400,700|Roboto&amp; display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme|Shadows+Into+Light&amp;display=swap" rel="stylesheet">
    
-
+    
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/wine.css">
-
+<!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    
+    <!-- bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/d57faaec46.js" ></script>
-    <script src="js/custom.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
 </head>
 <body>
+    <!-- Header Top -->
     <div class="header-top">
         <div class="container">
             <div class="row align-items-center">
@@ -38,11 +42,11 @@
             </div>
         </div>
     </div>
+    <!-- Menu nav -->
 <div class="sticky-wrapper d-none d-lg-block d-md-none">
     <div class="site-navbar" > 
-            <!-- d-none pl-0 d-lg-block -->
-    <div class="container">
-        <div class="d-flex align-items-center">
+        <div class="container">
+          <div class="d-flex align-items-center">
             <div class="mx-auto">
                 <nav class="site-navbar navigation position-relative">
                    
@@ -73,14 +77,16 @@
 
 <div class="site-section pb-0">
     <div class="container">
-        <div class="row mb-5 justify-content-center">
+        <!-- Card title -->
+        <div class="row mb-5 justify-content-center ">
             <div class="col-7 section-title text-center mb-5">
-                <h2 class="d-block">CARD</h2>
+                <h2 class="d-block" style="padding-top:30px">CARD</h2>
             </div>
         </div>
+<!-- card table -->
         <div class="row mb-5">
            <form class="col-md-12" method="post">
-               <div class="site-blocks-table">
+               <div class="site-blocks-table table-responsive-md">
                    <table class="table table-bordered">
                        <thead>
                            <tr>
@@ -91,53 +97,55 @@
                                <th class="product-total">Total</th>
                                <th class="product-remove">Remove</th>
                            </tr>
+
                            <tbody>
                                <tr>
                                    <td class="product-thumbnail">
-                                       <img src="img/wine-4.png" alt=""class="img-fluid">
+                                       <img src="img/ag.png" alt=""class="img-fluid img-rounded">
                                    </td>
                                    <td class="product-name">
                                        <h2 class="h5 cart-product-title text-black">Yerli Serab 2019</h2>
                                    </td>
                                    <td>$55.00</td>
                                    <td>
-                                       <div class="input-group mb-3" style="max-width:120px;">
-                                          <div class="input-group-prepend">
-                                              <button class="btn btn-outline-primary js-btn-minus" type="button" > - </button>
-                                          </div>
-                                          <input type="text" class="form-control text-center border mr-0" value="1">
-                                          <div class="input-group-append">
-                                              <button class="btn btn-outline-primary js-btn-plus" type="button"> + </button>
-                                          </div>
-                                        </div> 
+                                       <!-- plusMinus -->
+                                       <div class="input-group mb-3" style="max-width:100px;">
+                                            <div class="input-group-prepend">
+                                                <button class="down_count btn btn-info" type="button" > - </button>
+                                            </div>
+                                            <input type="text" class="form-control text-center border mr-0" value="0">
+                                            <div class="input-group-append">
+                                                <button class="up_count btn btn-info" type="button"> + </button>
+                                            </div>
+                                          </div> 
                                     </td>
                                     <td>$49.00</td>
                                     <td>
-                                        <a href="#" class="btn btn-primary height-auto btn-sm">X</a>
+                                        <a href="#" class="btn btn-ex height-auto btn-sm">X</a>
                                     </td>
                                </tr>
                                <tr>
                                     <td class="product-thumbnail">
-                                        <img src="img/wine-4.png" alt=""class="img-fluid">
+                                        <img src="img/Azgranatar-kehreba.png" alt=""class="img-fluid img-rounded">
                                     </td>
                                     <td class="product-name">
                                         <h2 class="h5 cart-product-title text-black">Xarici Serab 2017</h2>
                                     </td>
                                     <td>$40.00</td>
                                     <td>
-                                        <div class="input-group mb-3" style="max-width:120px;">
+                                        <div class="input-group mb-3" style="max-width:100px;">
                                            <div class="input-group-prepend">
-                                               <button class="btn btn-outline-primary js-btn-minus" type="button" > - </button>
+                                               <button class="down_count btn btn-info" type="button" > - </button>
                                            </div>
                                            <input type="text" class="form-control text-center border mr-0" value="1">
                                            <div class="input-group-append">
-                                               <button class="btn btn-outline-primary js-btn-plus" type="button"> + </button>
+                                               <button class="up_count btn btn-info" type="button"> + </button>
                                            </div>
                                          </div> 
                                      </td>
                                      <td>$49.00</td>
                                      <td>
-                                         <a href="#" class="btn btn-primary height-auto btn-sm">X</a>
+                                         <a href="#" class="btn btn-ex height-auto btn-sm">X</a>
                                      </td>
                                </tr>
                            </tbody>
@@ -150,16 +158,16 @@
 </div>
 
 <!-- --- -->
-<div class="site-section pt-5 bg-secondary">
+<div class="site-section pt-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="row mb-5">
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <button class="btn btn-primary btn-md btn-block">Update Cart</button>
+                        <button class="btn btn-ex btn-md btn-block">Update Cart</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="btn btn-outline-primary btn-md btn-block">Continue Shopping</button>
+                        <button class="btn btn-outline-dark btn-md btn-block">Continue Shopping</button>
                     </div>
                 </div>
                 <div class="row">
@@ -171,7 +179,7 @@
                         <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon code">
                     </div>
                     <div class="col-md-4">
-                        <button class="btn btn-primary btn-md px-4">Apply Coupon</button>
+                        <button class="btn btn-ex btn-md px-4">Apply Coupon</button>
                     </div>
                 </div>
             </div>
@@ -199,10 +207,11 @@
                                     <strong class="text-black">$230.00</strong>
                                 </div>
                         </div>
-                        <div class="row">
+                        <div class="row-end">
                             <div class="col-md-12">
-                                <button class="btn btn-primary btn-lg btn-block" onclick="">Proceed To Checkout</button>
-                            </div>
+                                <button class="btn btn-ex btn-lg btn-block">
+                                   <a href="checkout.html"><span>Proceed To Checkout</span></a>
+                                </button>
                         </div>
                     </div>
                 </div>
@@ -220,8 +229,8 @@
 
 
 
- <!-- footer -->
- <div class="footer">
+<!-- footer -->
+<div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -243,5 +252,7 @@
         </div>
    </div>
    
+   
+   <script src="js/OnclickplusMinus.js"></script>
 </body>
 </html>

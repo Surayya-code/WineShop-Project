@@ -39,6 +39,8 @@ body{
     font-size:18px;
 }
 
+
+
 .header-top{
     width: auto;
     height: auto;
@@ -53,15 +55,16 @@ body{
  }
 
 
-.site-navbar{
-   /* position: fixed;
-   float: right; */
+.site-navbar ul{
+    /* position: fixed; */
+   background: #ffffff;
+   margin-top: 20px;
+   top:70px;
+   left: 0;
+   right: 0;
+    }
+ 
   
-   margin: 0;
-   padding: 0;
-   
-}
-
 nav ul{
    list-style: none;
    background: rgba(0,0,0,0);
@@ -128,6 +131,45 @@ nav  li a{
 width: auto;
 height: 300px;
 }
+
+
+
+/* card table */
+.product-thumbnail img{
+    text-align: center;
+    max-width: 100%;
+    width: 200px;
+    height: auto; 
+ }
+ 
+.site-blocks-table thead tr{
+    text-align: center;
+    padding: 30px;
+    font-size:18px;
+    border:1px solid black;
+}
+.site-blocks-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: #212529;
+}
+.input-group {
+    /* border: 1px solid #930077; */
+}
+ .btn-ex {
+    color: #fff;
+    background-color: #930077;
+    border-color: #930077;
+}
+.btn-ex span {
+    color: #fff;
+}
+.row-end{
+    padding-bottom: 40px;
+}
+
+
 
 /*--------------- ADD CARD------- */
 .wine-actions{
@@ -237,33 +279,28 @@ text-transform: uppercase;
     margin-bottom: 100px;
 }
 
-.site-section-foryou .block-10 .play-button{
+.block-10 figure .play-button {
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    font-size: 40px;
-    width: 60px;
-    height: 60px;
-    background: #ffffff;
+    font-size: 60px;
+    width:90px;
+    height: 90px;
+    
+}
+
+.block-16 figure .play-button i{
+    position: absolute;
+    background: #fff;
     display: block;
     border-radius: 50%;
     border:none;
-}
-
-.block-16 figure .play-button>span {
-    position: absolute;
     left: 55%;
     top: 50%;
-    font-size: 20px!important;
-    -webkit-transform: translate(-50%,-45%);
-    -ms-transform: translate(-50%,-45%);
     transform: translate(-50%,-45%);
 }
 
-.icon-play:before {
-    content:"";
-}
 
 .testimony img{
     width: 80px!important;
@@ -290,6 +327,12 @@ text-transform: uppercase;
     text-align: center;
 }
 
+/* --------icon about */
+.icon i{
+    font-size: 40px;
+    color: #930077;
+}
+
 
 
 /* section 4 */
@@ -306,6 +349,8 @@ text-align: center;
 .site-section-four #news{
 color:#930077 !important;  
 }
+
+
 /* footer */
 .footer {
     position: relative;
@@ -324,6 +369,7 @@ color:#930077 !important;
 }
 .sosial-media{
     margin-bottom: 50px;
+    
 }
 .sosial-media a{
    position: relative;
@@ -333,7 +379,7 @@ color:#930077 !important;
    height: 40px;
    border-radius: 50%;
    background: #8e44ad;
-   color:#ffffff;
+   color:#ffffff!important;
    top:0;
    margin:3px;
    margin-bottom: 15px;
@@ -349,7 +395,7 @@ color:#930077 !important;
 }
 
  .sosial-media a:hover{
-    color:#16a085;
+    color:#16a085!important;
     top:-10px;
    
  }
@@ -362,6 +408,7 @@ color:#930077 !important;
  /* owl-carousel */
  .section{
      position: relative;
+     top:9`0px;
  }
  
  .intro-section{
@@ -416,4 +463,93 @@ min-height: 700px;
  .owl-dot.active{
     background-color: #ffffff!important;
     border:1px solid #8e44ad!important;
+}
+
+/* checkout */
+.bg-light a{
+    text-decoration: none;
+    color: #8e44ad!important;  
+}
+.btn{
+    background-color: #8e44ad!important;
+    border: none;
+    color:#ffffff;  
+}
+
+.border-pay a{
+    text-decoration: none;
+    color: #8e44ad!important;  
+
+}
+
+/* buttons */
+.input-group #number-value{
+    border:none;
+    outline: none;
+}
+
+
+/* mobile-menu */
+
+.site-mobile-menu{
+    position: fixed;
+    background: #ecf0f1;
+    width:300px;
+    bottom: 0;
+    right: 0;
+    padding-top: 20px;
+    height: calc(100vh);
+    z-index: 2000;
+    transition: width 1s;
+ }
+
+ .site-mobile-menu:hover{
+    width:0;
+ }
+.mobile-menu-header{
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.site-menu-body{
+    position: relative;
+    height: calc(100vh-52px);
+    padding: 0 20px 20px;
+    padding-bottom: 150px;
+}
+
+.site-nav-ul{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.site-nav-ul>li{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.site-nav-ul li>a{
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 20px; 
+    color:black;
+}
+.site-nav-ul .active>a:hover{
+color: #930077!important;
+}
+
+.site-nav-ul a{
+    padding:10px 20px;
+    display: block;
+    position: relative;
+}
+
+.site-menu-close i{
+    font-size: 30px;
+    float: right;
 }
