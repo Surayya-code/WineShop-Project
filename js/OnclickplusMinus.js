@@ -1,28 +1,22 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  $(".input-group-prepend").click(function() {
+    let cariKnopka = this;
+    let monitor = $(cariKnopka).next()[0];
 
-
-  $('.up_count').click(function(){
-      var cariKnopka=this;
-      var monitor =$(cariKnopka).prev();
-      var value= $(monitor).val();
-      value++;
-      $(monitor).val(value);
-    
+    let value = $(monitor).val();
+    if (value <= 0) {
+      value = 0;
+    } else {
+      value--;
+    }
+    $(monitor).val(value);
   });
 
-  $('.down_count').click(function(){
-    var cariKnopka=this;
-    var monitor =$(cariKnopka).next();
-    var value= $(monitor).val();
-    value--;
+  $(".input-group-append").click(function() {
+    let cariKnopka = this;
+    let monitor = $(cariKnopka).prev()[0];
+    let value = $(monitor).val();
+    value++;
     $(monitor).val(value);
-  
+  });
 });
-
-
-
-
-});
-
-
-  
