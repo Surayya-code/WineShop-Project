@@ -13,5 +13,6 @@ if (name==''|| password==''||  country=='' )
 }
 else{
     return true;
-}
-}
+};
+
+};
