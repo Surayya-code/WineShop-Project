@@ -9,16 +9,16 @@
 //     console.log(knopka.classList);
 // }
 $(document).ready(function(){
-    $('#menu-nav').click(function(){
-        $("#show-menu").toggle();
-        console.log(function())
+    $('.menu-icon').click(function(){
+        $(".site-mobile-menu").toggleClass('active');
+      
     });
 
 });
 
 $(document).ready(function(){
-    $('#close').click(function(){
-        $("#menu-body").hide();
+    $('.sideBarBtn').click(function(){
+        $(".site-menu-body").hide('');
     });
 
 });

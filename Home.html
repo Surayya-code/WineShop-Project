@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/wine.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/MenuNav.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
@@ -26,11 +27,11 @@
 <body>
 
 <!-- mobile-menu -->
-<div class="mobile-menu d-none d-lg-none d-md-block" id="show-menu">
+<div class="mobile-menu   d-md-block d-lg-none " id="show-menu">
     <div class="site-mobile-menu site-navbar-target">
         <div class="mobile-menu-header">
             <div class="site-menu-close mt-3" >
-                <span><i class="fas fa-times"id="close"></i></span>
+                <button class="sideBarBtn"><i class="fas fa-times"id="close"></i></button>
             </div>
         </div>
         <div class="site-menu-body" id="menu-body">
@@ -368,6 +369,6 @@
 <script src="js/include.js"></script>
 <script src="js/OwlCarousel.js"></script>
 <script src="js/Resize.js"></script>
-<script src="js/MenuNav.js"></script>
+
 </body>
 </html>

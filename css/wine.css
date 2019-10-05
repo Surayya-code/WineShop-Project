@@ -493,26 +493,40 @@ min-height: 700px;
 
 .site-mobile-menu{
     position: fixed;
+    top:0;
+    left:-300px;
     background: #ecf0f1;
     width:300px;
-    bottom: 0;
-    right: 0;
-    padding-top: 20px;
-    height: calc(100vh);
-    z-index: 2000;
-    transition: width 1s;
+    height: 100%;
+    /* right: 0; */
+    transition: left 2s;
+      z-index: 2000;
  }
 
- .site-mobile-menu:hover{
-    width:0;
+ .active{
+  left:0;   
  }
+
+
+ .sideBarBtn{
+     position:absolute;
+     background-color:  #ecf0f1;
+     border: none;
+     font-size: 30px;
+         
+ }
+
+
+
 .mobile-menu-header{
     width: 100%;
     float: left;
     padding-left: 20px;
     padding-right: 20px;
-    
+   
 }
+
+
 .site-menu-body{
     position: relative;
     height: calc(100vh-52px);
@@ -549,7 +563,3 @@ color: #930077!important;
     position: relative;
 }
 
-.site-menu-close i{
-    font-size: 30px;
-    float: right;
-}
